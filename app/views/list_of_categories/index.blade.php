@@ -52,7 +52,7 @@
 
 			<aside class="col-md-4">
 
-				<div class="widget categories">
+				<div class="widget categories test">
 					<h3>Categories</h3>
 					<div class="row">
 						<div class="col-sm-6">

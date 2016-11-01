@@ -37,7 +37,8 @@ extract($product);
 						</div>
 					</div>
 				</div><!--/.blog-item-->
-
+				<br/>
+				<div class="addthis_inline_share_toolbox"></div>
 
 				<!-- Comments -->
 				@if(count($comment)>0)
@@ -57,6 +58,7 @@ extract($product);
 					@endforeach
 				@endif
 
+				<hr>
 				<div id="contact-page clearfix">
 					<div class="status alert alert-success" style="display: none"></div>
 					<div class="message_heading">

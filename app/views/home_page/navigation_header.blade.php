@@ -8,18 +8,17 @@
         <div class="col-sm-6 col-xs-8">
           <div class="social">
             <ul class="social-share">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              <li><a href="https://www.facebook.com/HealthCardsPH/"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/billevable"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/billetemanel"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/healthcardsph/"><i class="fa fa-instagram"></i></a></li>
             </ul>
-            <div class="search">
-              <form role="form">
-                <input type="text" class="search-form" autocomplete="off" placeholder="Search">
-                <i class="fa fa-search"></i>
-              </form>
-            </div>
+            {{--<div class="search">--}}
+              {{--<form role="form">--}}
+                {{--<input type="text" class="search-form" autocomplete="off" placeholder="Search">--}}
+                {{--<i class="fa fa-search"></i>--}}
+              {{--</form>--}}
+            {{--</div>--}}
           </div>
         </div>
       </div>
@@ -35,8 +34,8 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">
-          {{ HTML::image('/images/h/logo.png',null, array('class'=>'img-responsive', 'style'=>'height:79px;!important')) }}
+        <a class="navbar-brand" href="{{URL::to('/')}}">
+          {{ HTML::image('/images/h/logo.png',null, array('class'=>'img-responsive', 'style'=>'height:65px;!important')) }}
         </a>
       </div>
 
@@ -44,7 +43,7 @@
         <ul class="nav navbar-nav">
           <li {{ ($active_page)=='home' ? 'class="active"' : ''  }} >  {{ HTML::link('/', 'Home', array(), false)}} </li>
           <li {{ ($active_page)=='articles' ? 'class="active"' : ''  }}> {{ HTML::link('/lists_of_categories', 'Blogs', array(), false)}} </li>
-          <li {{ ($active_page)=='healthcard_comparison_table' ? 'class="active"' : ''  }} >  {{ HTML::link('/healthcard_comparison_table', 'Healthcard Comparison', array(), false )}}</li>
+          <li {{ ($active_page)=='healthcard_comparison_table' ? 'class="active"' : ''  }} >  {{ HTML::link('/healthcard_comparison_table', 'Health Card Comparison', array(), false )}}</li>
         </ul>
       </div>
     </div><!--/.container-->

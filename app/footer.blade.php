@@ -1,4 +1,6 @@
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
 <script type="text/javascript">
 	$('#addbtn').on('click',function(){
 		$('#addModal').modal('show');  

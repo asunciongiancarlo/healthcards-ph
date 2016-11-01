@@ -30,14 +30,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Customization<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li>     {{ link_to('banners', 'Banners', array('class'                       =>'navbar-brand'))     }}    </li> 
-                  <li>     {{ link_to('themes', 'Themes', array('class'                         =>'navbar-brand'))     }}    </li> 
                   <li>     {{ link_to('static_pages', 'Static Pages', array('class'             =>'navbar-brand'))     }}    </li> 
                 </ul>
-              </li>            
-              <li>     {{ link_to('admin_conversations', 'Messages', array('class' =>'navbar-brand'))              }}    </li> 
-              <li>     {{ link_to('orders', 'Orders', array('class'                         =>'navbar-brand'))     }}    </li> 
-              <li>     {{ link_to('statistics', 'Sales Statistics', array('class'           =>'navbar-brand'))     }}    </li> 
+              </li>
       	      <li>     {{ link_to('cms_comments', 'Comments', array('class'    	           =>'navbar-brand'))     }}    </li>  
               <li>     {{ link_to('/', ' Front End', array('class'                             =>'navbar-brand', 'target'=>'_blank'))     }}     </li>
               <li class="dropdown">

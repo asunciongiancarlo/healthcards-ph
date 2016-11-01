@@ -94,10 +94,12 @@ class Blog extends \Eloquent {
 
 					// upload new image
 					Image::make($value->getRealPath())
-					->save($destinationPath.'original/'.$fileName)
+					->save($destinationPath.'original/'.$fileName)->destroy();
+
+					Image::make($destinationPath.'original/'.$fileName)
 					->resize('140', '140') 
 					->save($destinationPath.'thumbnail/'.$fileName)
-					->resize('239', '315')
+					->resize('280','255')
 					->save($destinationPath.'resize/'.$fileName)
 					->destroy();
 					

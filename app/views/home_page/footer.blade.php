@@ -1,3 +1,4 @@
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5816b46a04671782"></script>
 <footer id="footer" class="midnight-blue">
 	<div class="container">
 		<div class="row">
@@ -6,10 +7,9 @@
 			</div>
 			<div class="col-sm-6">
 				<ul class="pull-right">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Faq</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li  >  {{ HTML::link('/', 'Home', array(), false)}} </li>
+					<li > {{ HTML::link('/lists_of_categories', 'Blogs', array(), false)}} </li>
+					<li >  {{ HTML::link('/healthcard_comparison_table', 'Health Card Comparison', array(), false )}}</li>
 				</ul>
 			</div>
 		</div>

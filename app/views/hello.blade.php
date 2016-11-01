@@ -89,16 +89,17 @@
   <section id="partner">
     <div class="container">
       <div class="center wow fadeInDown">
-        <h2>Our Healthcards</h2>
+        <h2>Our Health Cards or Health Insurance</h2>
         <p class="lead"></p>
       </div>
 
       <div class="partners">
         <ul>
           <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/h/1462539563_Eastwest.jpg"></a></li>
-          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/h/1462539260_PhilCare-Logo.jpg"></a></li>
+          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/h/1462538942_maxicare.jpg"></a></li>
           <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/h/1462538998_Pacific Cross.jpg"></a></li>
-          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/1462538942_maxicare.jpg"></a></li>
+          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/1462539260_PhilCare-Logo.jpg"></a></li>
+          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/pru_life_uk-Business-Logo.jpg"></a></li>
         </ul>
       </div>
     </div><!--/.container-->
