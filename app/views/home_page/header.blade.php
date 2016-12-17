@@ -16,6 +16,15 @@
   {{ HTML::style('css/h/responsive.css') }}
 
 
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:type" content="article"/>
+  <?php if(isset($og_image)): ?>
+  <meta property="og:title" content="{{ $og_title." | "  }} Health Cards Ph"/>
+  <meta property="og:description" content="{{ $og_description  }}"/>
+  <meta property="og:site_name" content="Health Cards Ph"/>
+  <meta property="og:image" content="{{ url('/').'/img/resize/'.$og_image  }}"/>
+  <meta property="fb:app_id" content="1150741984981113"/>
+  <?php endif; ?>
   <!--[if lt IE 9]>
   {{ HTML::script('js/h/html5shiv.js')    }}
   {{ HTML::script('js/h/respond.min.js')  }}

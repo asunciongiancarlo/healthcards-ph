@@ -63,7 +63,8 @@ Route::group(array('before' => 'auth'), function()
 	Route::resource('admin_conversations', 'AdminConversationsController');
 	Route::resource('statistics', 'StatisticsController');
 
-	Route::resource('themes', 'ThemesController');	
+	Route::resource('themes', 'ThemesController');
+
 });
 
 

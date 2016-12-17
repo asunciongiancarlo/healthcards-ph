@@ -26,9 +26,9 @@ extract($product);
 				<div class="blog-item">
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 blog-content">
-							<h2>
+							<h1>
 								{{ $form_data['blog_title']   }}
-							</h2>
+							</h1>
 							<p>
 								<i>{{ $form_data['blog_intro']   }}</i>
 							</p>
@@ -62,7 +62,7 @@ extract($product);
 				<div id="contact-page clearfix">
 					<div class="status alert alert-success" style="display: none"></div>
 					<div class="message_heading">
-						<h4>Leave a Replay</h4>
+						<h4>Leave a Reply</h4>
 						<p>Make sure you enter the(*)required information where indicate.HTML code is not allowed</p>
 					</div>
 

@@ -18,6 +18,9 @@ class PreviewItemsController extends BaseController {
 		$data['related_products']     = Blog::getRelatedProducts($category_id);
 		$data['comment']              = CMSComment::Comment($blog_id);
 		$data['active_page']          = 'articles';
+		$data['og_title']			  = $data['product']['form_data']['blog_title'];
+		$data['og_description']		  = $data['product']['form_data']['blog_intro'];
+		$data['og_image']			  = $data['product']['images'][0]->image_name;
 
 		return View::make('preview_item.show')->withData($data);	
 	}
