@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="HealthCards.Ph- Choose for your Health">
+  <meta name="keywords" content="HealthCare Services,Out Patient Care Services,In Patient Care Services,Emergency Care Services,HMO, Healthcard, Healthcards">
   <meta name="author" content="">
-  <title>Health Cards Ph</title>
+
+  <title>HealthCards.Ph- Choose for your Health</title>
 
   <!-- core CSS -->
   {{ HTML::style('css/h/bootstrap.min.css') }}

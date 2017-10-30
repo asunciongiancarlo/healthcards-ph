@@ -3,6 +3,7 @@
 @include('home_page.header')
 
 <body>
+<p style="visibility: hidden">Find a health card coverage according to your needs, budget and lifestyle</p>
 @include('home_page.navigation_header')
 	@yield('content')
 @include('contact_us.message_form')

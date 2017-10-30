@@ -22,6 +22,7 @@ class HomeController extends BaseController {
 							->where('blog_featured', '=', 'y')
 							->where('blog_images.primary_image', '=', 1)
 							->groupBy('blogs.id')
+							->orderBy('blogs.created_at','desc')
 							->get();
 		$data['active_page'] = 'home';
 

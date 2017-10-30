@@ -4,6 +4,7 @@
   extract($data);
   ?>
   <section id="recent-works">
+    <div style="visibility: hidden;">Find a health card coverage according to your needs, budget and lifestyle</div>
     <div class="container">
       <div class="center wow fadeInDown">
         <h2>BLOG, NEWS AND EVENTS</h2>
@@ -99,7 +100,7 @@
           <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/h/1462538942_maxicare.jpg"></a></li>
           <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/h/1462538998_Pacific Cross.jpg"></a></li>
           <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/1462539260_PhilCare-Logo.jpg"></a></li>
-          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/pru_life_uk-Business-Logo.jpg"></a></li>
+          <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/h/value_care.jpg"></a></li>
         </ul>
       </div>
     </div><!--/.container-->
@@ -251,7 +252,7 @@
             </div>
             <div class="media-body">
               <h2>Have a question or need a custom quote?</h2>
-              <p>0917-8157-840 / +63-02-463-3379 / bille.temanel@healthcards.ph</p>
+              <p>0977-725-7981 / +63-02-463-3379 / bille.temanel@healthcards.ph</p>
             </div>
           </div>
         </div>

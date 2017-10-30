@@ -15,7 +15,12 @@
 		</div>
 	</div>
 </footer><!--/#footer-->
-
+<div style="
+    width: 100%;
+    text-align: center;
+">
+	<a href="http://mypanel.pangalan.com/redirector.cgi/ID,351c4287dbf2cfc695a9" target="_blank"><img src="https://mypanel.pangalan.com/data/aff-final1.png" width="728" height="90" alt="Pangalan.com" title=""></a>
+</div>
 
 {{ HTML::script('js/h/bootstrap.min.js')    }}
 {{ HTML::script('js/h/jquery.prettyPhoto.js')    }}

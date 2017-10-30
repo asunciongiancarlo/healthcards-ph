@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-xs-4">
-          <div class="top-number"><p><i class="fa fa-phone-square"></i>  0917-8157-840 / +63-02-463-3379</p></div>
+          <div class="top-number"><p><i class="fa fa-phone-square"></i>  0977-725-7981/ +63-02-463-3379</p></div>
         </div>
         <div class="col-sm-6 col-xs-8">
           <div class="social">

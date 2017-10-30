@@ -47,6 +47,27 @@ class Blog extends \Eloquent {
 				->resize('280', '255') 
 				->save($destinationPath.'resize/'.$fileName)
 				->destroy();
+
+				$myImg = Image::make($destinationPath.'original/'.$fileName);
+				// create new image with transparent background color
+				$background = Image::canvas(280, 255);
+				$hexcolor = $myImg->pickColor(100, 100, 'hex');
+				$background->fill($hexcolor);
+
+
+				// read image file and resize it to 200x200
+				// but keep aspect-ratio and do not size up,
+				// so smaller sizes don't stretch
+				$image = Image::make($destinationPath.'original/'.$fileName)->resize(300, 255, function ($c) {
+					$c->aspectRatio();
+					$c->upsize();
+				});
+
+				// insert resized image centered into background
+				$background->insert($image, 'center');
+
+				// save or do whatever you like
+				$background->save($destinationPath.'resize/'.$fileName);
 				
 				//SAVE ALL IMAGES
 				$blog_image 			   = New BlogImage;
@@ -67,6 +88,16 @@ class Blog extends \Eloquent {
 		}
 	
 		
+	}
+
+	public static function getColorAverage(Image $image)
+	{
+		$image = clone $image;
+		// Reduce to single color and then sample
+		$color = $image->limitColors(1)->pickColor(0, 0);
+		$image->destroy();
+
+		return $color;
 	}
 
 	public static function updateBlog($id)
@@ -96,12 +127,34 @@ class Blog extends \Eloquent {
 					Image::make($value->getRealPath())
 					->save($destinationPath.'original/'.$fileName)->destroy();
 
+
 					Image::make($destinationPath.'original/'.$fileName)
 					->resize('140', '140') 
 					->save($destinationPath.'thumbnail/'.$fileName)
 					->resize('280','255')
 					->save($destinationPath.'resize/'.$fileName)
 					->destroy();
+
+
+					$img = Image::make($destinationPath.'original/'.$fileName);
+					// create new image with transparent background color
+					$background = Image::canvas(280, 255);
+					$hexcolor = $img->pickColor(100, 100, 'hex');
+					$background->fill($hexcolor);
+
+					// read image file and resize it to 200x200
+					// but keep aspect-ratio and do not size up,
+					// so smaller sizes don't stretch
+					$image = Image::make($destinationPath.'original/'.$fileName)->resize(300, 255, function ($c) {
+						$c->aspectRatio();
+						$c->upsize();
+					});
+
+					// insert resized image centered into background
+					$background->insert($image, 'center');
+
+					// save or do whatever you like
+					$background->save($destinationPath.'resize/'.$fileName);
 					
 					//SAVE ALL IMAGES
 					$blog_image 			   = New BlogImage;
